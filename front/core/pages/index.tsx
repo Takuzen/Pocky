@@ -136,23 +136,23 @@ const IndexPage = () => (
         </Logo>
       </TopSection>
       <PhotoSection>
-        <PhotoWrapper>
-          <Image
-            src="/images/front.JPG"
-            alt="front-image"
-            width={700}
-            height={500}
-          ></Image>
-        </PhotoWrapper>
-      </PhotoSection>
-      <MapSection>
         <Image
-          src="/images/welcome-resized.jpg"
-          alt="welcome-image"
-          width={500}
-          height={250}
-          objectFit="contain"
+          src="/images/front.JPG"
+          alt="front-image"
+          width={700}
+          height={500}
         ></Image>
+      </PhotoSection>
+      <WelcomeSection>
+        <Image
+          src="/images/welcome.jpg"
+          alt="welcome-image"
+          width={470}
+          height={250}
+          objectFit="cover"
+        ></Image>
+      </WelcomeSection>
+      <MapSection>
         <MediaQuery maxDeviceWidth={767}>
           <AddressMapSmall />
         </MediaQuery>
@@ -301,14 +301,14 @@ const ChevronIcon = styled.image`
 `
 
 const PhotoSection = styled.section`
-  height: 100vh;
+  height: 67vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  ${Media.lessThan('medium')`
-    height: 50vh;
+  ${Media.lessThan('small')`
+    height: 35vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -316,10 +316,17 @@ const PhotoSection = styled.section`
   `}
 `
 
-const PhotoWrapper = styled.div`
-  ${Media.lessThan('medium')`
-    position: relative;
-    top: -30px;
+const WelcomeSection = styled.section`
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  ${Media.lessThan('small')`
+    height: 26vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   `}
 `
 
