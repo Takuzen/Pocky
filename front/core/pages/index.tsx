@@ -90,12 +90,13 @@ const IndexPage = () => (
               <p>Instagram</p>
             </Link>
           </Instagram>
+
           <OnlineStore>
             <OnlineStoreIcon>
               <MediaQuery maxDeviceWidth={767}>
                 <Link href="https://pocky2020.base.ec/">
                   <Image
-                    src="/icons/store-icon.svg"
+                    src="/icons/shirt.svg"
                     alt="store-icon"
                     width={20}
                     height={20}
@@ -105,7 +106,7 @@ const IndexPage = () => (
               <MediaQuery minDeviceWidth={768}>
                 <Link href="https://pocky2020.base.ec/">
                   <Image
-                    src="/icons/store-icon.svg"
+                    src="/icons/shirt.svg"
                     alt="store-icon"
                     width={30}
                     height={30}
@@ -117,6 +118,35 @@ const IndexPage = () => (
               <p>Online Store</p>
             </Link>
           </OnlineStore>
+
+	  <About>
+            <AboutIcon>
+              <MediaQuery maxDeviceWidth={767}>
+                <Link href="/about">
+                  <Image
+                    src="/icons/store-icon.svg"
+                    alt="about-icon"
+                    width={20}
+                    height={20}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+              <MediaQuery minDeviceWidth={768}>
+                <Link href="/about">
+                  <Image
+                    src="/icons/store-icon.svg"
+                    alt="about-icon"
+                    width={30}
+                    height={30}
+                  ></Image>
+                </Link>
+              </MediaQuery>
+            </AboutIcon>
+            <Link href="/about">
+              <p>About</p>
+            </Link>
+          </About>
+
         </Menu>
         <Logo>
           <PockyLogo>
@@ -210,7 +240,7 @@ const TopSection = styled.section`
 const Menu = styled.div`
   display: grid;
   grid-template-columns: [tate0] 82% [tate1] 18% [tate2];
-  grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
+  grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr [yoko3] 1fr;
   justify-items: end;
   align-items: center;
   margin-right: 30px;
@@ -219,7 +249,7 @@ const Menu = styled.div`
     /* screen width is less than 768px (medium) */
     display: grid;
     grid-template-columns: [tate0] 1fr [tate1] 1fr [tate2];
-    grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr;
+    grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr [yoko3] 1fr;
     justify-items: end;
     align-items: center;
     margin-right: 10px
@@ -287,6 +317,28 @@ const Instagram = styled.div`
 `
 
 const InstagramIcon = styled.image`
+  ${Media.lessThan('medium')`
+    margin-right: 5px;
+  `}
+`
+
+const About = styled.div`
+  grid-column-start: tate1;
+  grid-row-start: yoko3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Poppins', sans-serif;
+
+  :hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+`
+
+const AboutIcon = styled.image`
   ${Media.lessThan('medium')`
     margin-right: 5px;
   `}
