@@ -8,8 +8,7 @@ const AboutPage = () => (
    　“About a Pocky SALON & STORE…”
    </ContentTitle>
    <Content>
-   Established in Tokyo 2020
-
+   Established in Tokyo 2020 \n
 
 
 Hair Salon,Used Vintage & Original Clothing,Skateboards,Cactus 
