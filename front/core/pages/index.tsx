@@ -122,7 +122,7 @@ const IndexPage = () => (
 	  <About>
             <AboutIcon>
               <MediaQuery maxDeviceWidth={767}>
-                <Link href="/about">
+                <Link href="/About">
                   <Image
                     src="/icons/store-icon.svg"
                     alt="about-icon"
@@ -132,7 +132,7 @@ const IndexPage = () => (
                 </Link>
               </MediaQuery>
               <MediaQuery minDeviceWidth={768}>
-                <Link href="/about">
+                <Link href="/About">
                   <Image
                     src="/icons/store-icon.svg"
                     alt="about-icon"
@@ -142,7 +142,7 @@ const IndexPage = () => (
                 </Link>
               </MediaQuery>
             </AboutIcon>
-            <Link href="/about">
+            <Link href="/About">
               <p>About</p>
             </Link>
           </About>
