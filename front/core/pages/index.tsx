@@ -1,7 +1,6 @@
-import Layout from '../components/Layout'
+import Layout from '../styles/Layout'
 import Image from 'next/image'
 import Link from 'next/link'
-import '../styles/main.scss'
 import AwesomeSlider from 'react-awesome-slider'
 import 'react-awesome-slider/dist/styles.css'
 
@@ -33,6 +32,7 @@ const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
     <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
       <Image
+        className="classname"
         src="/icons/cut-outline.svg"
         alt="cut-icon"
         width={20}

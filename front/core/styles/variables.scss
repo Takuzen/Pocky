@@ -1,0 +1,13 @@
+$mb: 767px;
+$dsk: 768px;
+
+$breakpoints: (
+  'mb': 'screen and (max-width: #{$mb})',
+  'dsk': 'screen and (min-width: #{$dsk})',
+) !default;
+
+@mixin mq($size) {
+  @media #{map-get($breakpoints, $size)} {
+    @content;
+  }
+}

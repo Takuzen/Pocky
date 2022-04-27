@@ -1,0 +1,8 @@
+@import 'variables';
+
+.classname {
+  @include mq(mb) {
+  }
+  @include mq(dsk) {
+  }
+}
