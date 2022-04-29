@@ -12,11 +12,11 @@
   font-family: 'Playfair Display', serif;
   @include mq(mb) {
     display: grid;
-    grid-template-columns: [tate0] 82% [tate1] 18% [tate2];
+    grid-template-columns: [tate0] 1fr [tate1] 1fr [tate2];
     grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr [yoko3] 1fr;
     justify-items: end;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 15px;
   }
   @include mq(dsk) {
     display: grid;
@@ -34,6 +34,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  white-space: nowrap;
   &:hover {
     opacity: 0.6;
     cursor: pointer;
@@ -47,6 +48,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  white-space: nowrap;
   &:hover {
     opacity: 0.6;
     cursor: pointer;
@@ -60,6 +62,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  white-space: nowrap;
   &:hover {
     opacity: 0.6;
     cursor: pointer;
@@ -73,6 +76,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  white-space: nowrap;
   &:hover {
     opacity: 0.6;
     cursor: pointer;
