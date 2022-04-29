@@ -1,8 +1,140 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@700&display=swap');
 
-.classname {
+.Wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.Menu {
+  font-family: 'Playfair Display', serif;
+  @include mq(mb) {
+    display: grid;
+    grid-template-columns: [tate0] 82% [tate1] 18% [tate2];
+    grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr [yoko3] 1fr;
+    justify-items: end;
+    align-items: center;
+    margin-right: 30px;
+  }
+  @include mq(dsk) {
+    display: grid;
+    grid-template-columns: [tate0] 82% [tate1] 18% [tate2];
+    grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr [yoko3] 1fr;
+    justify-items: end;
+    align-items: center;
+    margin-right: 30px;
+  }
+}
+
+.Reservation {
+  grid-column-start: tate1;
+  grid-row-start: yoko0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+.Store {
+  grid-column-start: tate1;
+  grid-row-start: yoko1;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+.Instagram {
+  grid-column-start: tate1;
+  grid-row-start: yoko2;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+.About {
+  grid-column-start: tate1;
+  grid-row-start: yoko3;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+.Dog {
+  display: flex;
+  justify-content: center;
+}
+
+.Chevron {
+  display: flex;
+  justify-content: center;
+}
+
+.Photo {
   @include mq(mb) {
   }
   @include mq(dsk) {
   }
+}
+
+.Welcome {
+  display: flex;
+  justify-content: center;
+}
+
+.Map {
+  @include mq(mb) {
+    .MapSmall {
+      display: flex;
+      justify-content: center;
+    }
+    .MapBig {
+      display: none;
+    }
+  }
+  @include mq(dsk) {
+    .MapSmall {
+      display: none;
+    }
+    .MapBig {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.Info {
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+  font-family: 'Sawarabi Mincho', serif;
+  text-align: center;
+  margin: 40px 0 40px 0;
+}
+
+.AboutPage {
+  margin: 50px;
+  text-align: center;
+  font-family: 'Sawarabi Mincho', serif;
+  line-height: 1.5;
 }

@@ -30,155 +30,140 @@ const AddressMapSmall = () => {
 
 const IndexPage = () => (
   <Layout title="Pocky SALON & STORE">
-    <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
-      <Image
-        className="classname"
-        src="/icons/cut-outline.svg"
-        alt="cut-icon"
-        width={20}
-        height={20}
-      ></Image>
-    </Link>
+    <section className="Wrapper">
+      <section className="Menu">
+        <div className="Reservation">
+          <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
+            <Image
+              className="classname"
+              src="/icons/cut-outline.svg"
+              alt="cut-icon"
+              width={20}
+              height={20}
+            ></Image>
+          </Link>
+          <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
+            <p>Reservation</p>
+          </Link>
+        </div>
+        <div className="Instagram">
+          <Link href="https://www.instagram.com/denimyarou/?hl=en">
+            <Image
+              src="/icons/logo-instagram.svg"
+              alt="instagram-icon"
+              width={20}
+              height={20}
+            ></Image>
+          </Link>
+          <Link href="https://www.instagram.com/denimyarou/?hl=en">
+            <p>Instagram</p>
+          </Link>
+        </div>
+        <div className="Store">
+          <Link href="https://pocky2020.base.ec/">
+            <Image
+              src="/icons/shirt.svg"
+              alt="store-icon"
+              width={20}
+              height={20}
+            ></Image>
+          </Link>
+          <Link href="https://pocky2020.base.ec/">
+            <p>Online Store</p>
+          </Link>
+        </div>
+        <div className="About">
+          <Link href="/About">
+            <Image
+              src="/icons/store-icon.svg"
+              alt="about-icon"
+              width={20}
+              height={20}
+            ></Image>
+          </Link>
+          <Link href="/About">
+            <p>About</p>
+          </Link>
+        </div>
+      </section>
 
-    <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
-      <Image
-        src="/icons/cut-outline.svg"
-        alt="cut-icon"
-        width={30}
-        height={30}
-      ></Image>
-    </Link>
+      <section className="Core">
+        <div className="Dog">
+          <Image
+            src="/images/pocky-logo.jpg"
+            alt="pocky-logo"
+            width={500}
+            height={500}
+          ></Image>
+        </div>
 
-    <Link href="https://www.yoyakul.jp/beauty-user/user/pocky/customerTop">
-      <p>Reservation</p>
-    </Link>
+        <div className="Chevron">
+          <Image
+            src="/icons/chevron-down-outline.svg"
+            alt="chevron-down-icon"
+            width={50}
+            height={50}
+          ></Image>
+        </div>
 
-    <Link href="https://www.instagram.com/denimyarou/?hl=en">
-      <Image
-        src="/icons/logo-instagram.svg"
-        alt="instagram-icon"
-        width={20}
-        height={20}
-      ></Image>
-    </Link>
+        <div className="Photo">
+          <AwesomeSlider
+            organicArrows
+            media={[
+              {
+                source: 'images/front.JPG',
+              },
+              {
+                source: 'images/door-zoomed.JPG',
+              },
+              {
+                source: 'images/gallery.JPG',
+              },
+              {
+                source: 'images/shirt.JPG',
+              },
+            ]}
+          />
+        </div>
+        <div className="Welcome">
+          <Image
+            src="/images/welcome.jpg"
+            alt="welcome-image"
+            width={470}
+            height={250}
+            objectFit="cover"
+          ></Image>
+        </div>
+        <div className="Map">
+          <div className="MapSmall">
+            <AddressMapSmall />
+          </div>
+          <div className="MapBig">
+            <AddressMapMedium />
+          </div>
+        </div>
 
-    <Link href="https://www.instagram.com/denimyarou/?hl=en">
-      <Image
-        src="/icons/logo-instagram.svg"
-        alt="instagram-icon"
-        width={30}
-        height={30}
-      ></Image>
-    </Link>
-
-    <Link href="https://www.instagram.com/denimyarou/?hl=en">
-      <p>Instagram</p>
-    </Link>
-
-    <Link href="https://pocky2020.base.ec/">
-      <Image
-        src="/icons/shirt.svg"
-        alt="store-icon"
-        width={20}
-        height={20}
-      ></Image>
-    </Link>
-
-    <Link href="https://pocky2020.base.ec/">
-      <Image
-        src="/icons/shirt.svg"
-        alt="store-icon"
-        width={30}
-        height={30}
-      ></Image>
-    </Link>
-
-    <Link href="https://pocky2020.base.ec/">
-      <p>Online Store</p>
-    </Link>
-
-    <Link href="/About">
-      <Image
-        src="/icons/store-icon.svg"
-        alt="about-icon"
-        width={20}
-        height={20}
-      ></Image>
-    </Link>
-
-    <Link href="/About">
-      <Image
-        src="/icons/store-icon.svg"
-        alt="about-icon"
-        width={30}
-        height={30}
-      ></Image>
-    </Link>
-
-    <Link href="/About">
-      <p>About</p>
-    </Link>
-
-    <Image
-      src="/images/pocky-logo.jpg"
-      alt="pocky-logo"
-      width={500}
-      height={500}
-    ></Image>
-
-    <Image
-      src="/icons/chevron-down-outline.svg"
-      alt="chevron-down-icon"
-      width={50}
-      height={50}
-    ></Image>
-
-    <AwesomeSlider
-      organicArrows
-      media={[
-        {
-          source: 'images/front.JPG',
-        },
-        {
-          source: 'images/door-zoomed.JPG',
-        },
-        {
-          source: 'images/gallery.JPG',
-        },
-        {
-          source: 'images/shirt.JPG',
-        },
-      ]}
-    />
-
-    <Image
-      src="/images/welcome.jpg"
-      alt="welcome-image"
-      width={470}
-      height={250}
-      objectFit="cover"
-    ></Image>
-
-    <AddressMapSmall />
-    <AddressMapMedium />
-
-    <text>
-      〒150-0001
-      <br />
-      東京都渋谷区神宮前3丁目27-14
-      <br />
-      Owner
-      <br />
-      Hiromu Yamada
-      <br />
-      山田 大夢
-      <br />
-      denimyarou@gmail.com
-      <br />
-      03-6447-4030
-      <br />
-      OPEN 11:00 - 21:00
-    </text>
+        <div className="Info">
+          <text>
+            〒150-0001
+            <br />
+            東京都渋谷区神宮前3丁目27-14
+            <br />
+            Owner
+            <br />
+            Hiromu Yamada
+            <br />
+            山田 大夢
+            <br />
+            denimyarou@gmail.com
+            <br />
+            03-6447-4030
+            <br />
+            OPEN 11:00 - 21:00
+          </text>
+        </div>
+      </section>
+    </section>
   </Layout>
 )
 
