@@ -14,22 +14,22 @@
     display: grid;
     grid-template-columns: [tate0] 1fr [tate1] 1fr [tate2];
     grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr [yoko3] 1fr;
-    justify-items: end;
+    justify-items: start;
     align-items: center;
-    margin-right: 15px;
+    margin-left: 15px;
   }
   @include mq(dsk) {
     display: grid;
     grid-template-columns: [tate0] 82% [tate1] 18% [tate2];
     grid-template-rows: [yoko0] 1fr [yoko1] 1fr [yoko2] 1fr [yoko3] 1fr;
-    justify-items: end;
+    justify-items: start;
     align-items: center;
-    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 
 .Reservation {
-  grid-column-start: tate1;
+  grid-column-start: tate0;
   grid-row-start: yoko0;
   display: flex;
   gap: 10px;
@@ -43,7 +43,7 @@
 }
 
 .Store {
-  grid-column-start: tate1;
+  grid-column-start: tate0;
   grid-row-start: yoko1;
   display: flex;
   gap: 10px;
@@ -57,7 +57,7 @@
 }
 
 .Instagram {
-  grid-column-start: tate1;
+  grid-column-start: tate0;
   grid-row-start: yoko2;
   display: flex;
   gap: 10px;
@@ -71,7 +71,7 @@
 }
 
 .About {
-  grid-column-start: tate1;
+  grid-column-start: tate0;
   grid-row-start: yoko3;
   display: flex;
   gap: 10px;
@@ -85,11 +85,6 @@
 }
 
 .Dog {
-  display: flex;
-  justify-content: center;
-}
-
-.Chevron {
   display: flex;
   justify-content: center;
 }
@@ -133,7 +128,16 @@
   line-height: 1.5;
   font-family: 'Sawarabi Mincho', serif;
   text-align: center;
-  margin: 40px 0 40px 0;
+  margin: 40px 0 70px 0;
+}
+
+.AboutContainer {
+  @include mq(dsk) {
+    margin: 0 25vw 0 25vw;
+  }
+  @include mq(mb) {
+    margin: 0;
+  }
 }
 
 .AboutPage {
@@ -141,4 +145,10 @@
   text-align: center;
   font-family: 'Sawarabi Mincho', serif;
   line-height: 1.5;
+  .b {
+    font-weight: bold;
+  }
+  p {
+    font-size: 9px;
+  }
 }

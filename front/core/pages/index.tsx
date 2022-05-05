@@ -97,15 +97,6 @@ const IndexPage = () => (
           ></Image>
         </div>
 
-        <div className="Chevron">
-          <Image
-            src="/icons/chevron-down-outline.svg"
-            alt="chevron-down-icon"
-            width={50}
-            height={50}
-          ></Image>
-        </div>
-
         <div className="Photo">
           <AwesomeSlider
             organicArrows
